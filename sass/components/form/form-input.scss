@@ -1,0 +1,17 @@
+.form-input{
+    width: 80%;
+    padding: 1rem;
+    border: none;
+    border-bottom: solid 0.1rem rgba(0,0,0,0.2);
+}
+
+
+@media only screen and (min-width: 992px){
+    .form-input{
+    border: solid 0.05rem black ;
+    border-radius: 0.15rem;
+    max-width: 80%;
+    margin: 2% 7%;
+    padding: 0.5rem 1rem;
+    }
+}

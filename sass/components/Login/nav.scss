@@ -1,0 +1,13 @@
+.nav{
+    &__base{
+        height: 8px;
+        background-color: #283e4a;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        display: flex;
+        width: 100%;
+        -webkit-box-align: center;
+        align-items: center;
+    }
+}

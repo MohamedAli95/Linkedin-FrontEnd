@@ -1,0 +1,29 @@
+.signup-btn{
+    padding: 0.8rem;
+    width: 90%;
+    border-style: none;
+    border-radius: 0.1  rem;
+    color: white;
+    margin: 1rem 0;
+    &--sky{
+        background-color: #00a0dc;
+        transition: background-color 0.3s;
+        &:hover{
+            background-color: #006097;
+        }
+    }
+
+    &--dark-blue{
+        background-color: #425597;
+        transition: background-color 0.3s;
+        &:hover{
+            background-color: #3F5190;
+        }
+    }
+}
+
+@media only screen and (min-width: 992px){
+    .signup-btn{
+        max-width: 95%;
+    }
+}
