@@ -82,14 +82,35 @@ table {
   .signup-btn {
     max-width: 95%; } }
 
-.form-input {
+.signup-upload input[type="file"] {
+  display: none; }
+
+.signup-upload label[for="UploadPhoto"] {
+  display: inline-block;
+  border-radius: 50%;
+  width: 5rem;
+  height: 5rem;
+  text-align: center;
+  background-color: #f9f9f9;
+  border: 1px solid #e5e5e5;
+  font-size: 2.5rem;
+  line-height: 4.7rem;
+  color: #00a0dc;
+  margin-top: 1rem; }
+
+@media only screen and (min-width: 992px) {
+  label[for="UploadPhoto"] {
+    align-self: center !important;
+    margin: 0 !important; } }
+
+.signup-form-input {
   width: 80%;
   padding: 1rem;
   border: none;
   border-bottom: solid 0.1rem rgba(0, 0, 0, 0.2); }
 
 @media only screen and (min-width: 992px) {
-  .form-input {
+  .signup-form-input {
     border: solid 0.05rem black;
     border-radius: 0.15rem;
     max-width: 80%;
@@ -143,7 +164,7 @@ table {
   align-items: center;
   flex-direction: column; }
 
-.form-input-container {
+.signup-form-input-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -172,7 +193,7 @@ table {
     color: white; } }
 
 @media only screen and (min-width: 992px) {
-  .form-input-container label {
+  .signup-form-input-container label {
     align-self: start;
     margin-left: 6%; }
   .signup__form {
@@ -187,7 +208,7 @@ table {
     max-width: 74%;
     background-color: #EDF0F3;
     color: rgba(0, 0, 0, 0.9);
-    height: 33rem; }
+    height: 62rem; }
   .signup__aggr {
     color: rgba(0, 0, 0, 0.6); }
   ::-webkit-input-placeholder {
@@ -195,7 +216,7 @@ table {
   ::-moz-placeholder {
     /* Firefox 19+ */
     color: transparent; }
-  .form-input-container {
+  .signup-form-input-container {
     margin-top: 2rem; }
   .signup-page a {
     color: rgba(0, 0, 0, 0.6); }
