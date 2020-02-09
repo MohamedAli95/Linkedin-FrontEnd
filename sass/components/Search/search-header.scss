@@ -1,0 +1,33 @@
+.search-header{
+    background-color: #283E4A;
+    height: 52px;
+    display: flex;
+    // justify-content: space-between;
+    // font-size: 13px;
+    // font-weight: 100px;
+    // position: relative;
+    // flex-wrap: nowrap;
+
+    .d1 {
+        width: 160px;
+        height: 52px;
+        // background-color: yellow;
+        // flex-shrink: 1.4;
+        padding-left: 25px;
+    }
+    .d2{
+        width: 480px;
+        height: 52px;
+        // background-color: red;
+        min-width: 115px;
+        padding-top: 2px;
+        flex-shrink: 1.5;
+    }
+    .d3{
+        width: 786px;
+        height: 52px;
+        // background-color: teal;
+        flex-shrink: 1;
+    }
+}
+  

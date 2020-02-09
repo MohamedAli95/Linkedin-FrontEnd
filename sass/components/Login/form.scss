@@ -2,6 +2,10 @@
     position: relative;
     transition: all 0.2s;
     touch-action: manipulation;
+    .btn__showPassword{
+      width: auto;
+        height: auto;
+    }
     &__login{
         width: 384px;
         margin: auto;
@@ -17,10 +21,7 @@
         height: 43px;
         cursor: text;
         padding: 5px 4px 0px;
-        .btn__showPassword{
-          width: auto;
-          height: auto;
-        }
+       
        
         // width: 20rem;
         // font-size: 1.07rem;;
@@ -78,17 +79,17 @@ input:focus + label {
     position: relative;
   cursor: pointer;
 }
-@media screen and (max-width: 765px) {
- form input{
-    width: 500px;
+@media screen and (max-width: 747px) {
+  .form__login input{
+    width: 40rem;
  }
-  form label{
-    left: -12rem;
+ .form__login label{
+    left: -17rem;
   }
   input:not(:placeholder-shown) + label,
   input:focus + label {
     transform: translate(0, 1rem) scale(1);
-    left: -12.3rem;
+    left:-17rem;
       position: relative;
     cursor: pointer;
     
@@ -97,19 +98,26 @@ input:focus + label {
     font-size: 10px;
 
   }
+  .sign-in-form .btn__showPassword {
+    left: 18rem;
+  }
+  .btn__primary--large {
+    width: 41rem;
+  }
 }
 @media screen and (max-width: 500px) {
-  form input{
-     width: 400px;
+  
+  .form__login input{
+    width: 28rem;
      
    }
-   form label{
-    left: -9rem;
+   .form__login label{
+    left: -11rem;
    }
    input:not(:placeholder-shown) + label,
 input:focus + label {
   
-  left: -9.3rem;
+  left: -11rem;
     position: relative;
   cursor: pointer;
   
@@ -119,5 +127,10 @@ input:focus + label {
 
 }
 
-   
+.btn__primary--large {
+  width: 29rem;
+}
+.sign-in-form .btn__showPassword {
+  left: 11rem;
+}
  }
