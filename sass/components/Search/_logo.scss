@@ -1,0 +1,26 @@
+.search-logo{
+    // display: inline-block !important;
+    float: right;
+    margin: 10px 5px ;
+    width: 37px;
+    height: 45px;
+    color: #0077B5;
+    font-size: 42px;
+    position: relative;
+    // margin:10%;
+    &--back{
+        width: 36px;
+        height: 33px;
+        background-color: white;
+        position: absolute;
+        top:0;
+        left: 0;
+        z-index: 1;
+    }
+    &--icon{
+        z-index: 2;
+        position: absolute;
+        top:-5px;
+        left: 0;
+    }
+}
