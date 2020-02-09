@@ -224,8 +224,6 @@ table {
     display: initial; } }
 
 .btn__showPassword {
-  width: auto;
-  height: auto;
   left: 8rem;
   position: relative;
   top: 3rem;
@@ -233,19 +231,12 @@ table {
   background-color: rgba(0, 0, 0, 0);
   border: 0;
   border-radius: 2px;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   color: #0073b1;
   cursor: pointer;
-  display: inline-block;
   /* font-size: 1.4rem; */
   font-weight: 600;
-  font-family: inherit;
-  height: 24px;
-  line-height: 24px;
-  overflow: hidden;
-  outline-width: 2px;
-  outline: 0; }
+  font-family: inherit; }
 
 .btn__primary--large {
   width: 21rem;
@@ -350,6 +341,9 @@ table {
   position: relative;
   transition: all 0.2s;
   touch-action: manipulation; }
+  .sign-in-form .btn__showPassword {
+    width: auto;
+    height: auto; }
   .sign-in-form__login {
     width: 384px;
     margin: auto; }
@@ -362,9 +356,6 @@ table {
     height: 43px;
     cursor: text;
     padding: 5px 4px 0px; }
-    .sign-in-form input .btn__showPassword {
-      width: auto;
-      height: auto; }
   .sign-in-form label {
     display: block;
     text-align: left;
@@ -396,32 +387,40 @@ input:focus + label {
   position: relative;
   cursor: pointer; }
 
-@media screen and (max-width: 765px) {
-  form input {
-    width: 500px; }
-  form label {
-    left: -12rem; }
+@media screen and (max-width: 747px) {
+  .form__login input {
+    width: 40rem; }
+  .form__login label {
+    left: -17rem; }
   input:not(:placeholder-shown) + label,
   input:focus + label {
     transform: translate(0, 1rem) scale(1);
-    left: -12.3rem;
+    left: -17rem;
     position: relative;
     cursor: pointer; }
   .footer__base__nav-list li {
-    font-size: 10px; } }
+    font-size: 10px; }
+  .sign-in-form .btn__showPassword {
+    left: 18rem; }
+  .btn__primary--large {
+    width: 41rem; } }
 
 @media screen and (max-width: 500px) {
-  form input {
-    width: 400px; }
-  form label {
-    left: -9rem; }
+  .form__login input {
+    width: 28rem; }
+  .form__login label {
+    left: -11rem; }
   input:not(:placeholder-shown) + label,
   input:focus + label {
-    left: -9.3rem;
+    left: -11rem;
     position: relative;
     cursor: pointer; }
   .footer__base__nav-list li {
-    font-size: 5px; } }
+    font-size: 5px; }
+  .btn__primary--large {
+    width: 29rem; }
+  .sign-in-form .btn__showPassword {
+    left: 11rem; } }
 
 .header__logo {
   padding: 32px 0 24px 0;
