@@ -61,7 +61,7 @@
 }
     
 }
-.form-input-container{
+.signup-form-input-container{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -108,7 +108,7 @@
 }
 
 @media only screen and (min-width: 992px) {
-    .form-input-container{
+    .signup-form-input-container{
         label{
             align-self: start;
             margin-left:6% ;
@@ -132,7 +132,7 @@
             max-width: 74%;
             background-color: #EDF0F3;
             color: rgba(0,0,0,0.9);
-            height: 33rem;
+            height: 62rem;
             
         }
         &__aggr{
@@ -146,7 +146,7 @@
         color:transparent; 
      }
 
-     .form-input-container{
+     .signup-form-input-container{
          margin-top: 2rem;
      }
 
